@@ -10,8 +10,8 @@ object Version {
     }
   }
 
-  val geotrellis  =  "1.2.0-RC1"
+  val geotrellis  =  "2.2.0"
   val akka        = "2.4.14"
   val akkaHttp    = "10.0.0"
-  val scala       = "2.11.11"
+  val scala       = "2.12.11"
 }

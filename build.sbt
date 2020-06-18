@@ -7,7 +7,6 @@ licenses := Seq("Apache-2.0" -> url("http://www.apache.org/licenses/LICENSE-2.0.
 scalacOptions ++= Seq(
   "-deprecation",
   "-unchecked",
-  "-Yinline-warnings",
   "-language:implicitConversions",
   "-language:reflectiveCalls",
   "-language:higherKinds",

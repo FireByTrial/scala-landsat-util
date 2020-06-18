@@ -1,3 +1,4 @@
-addSbtPlugin("me.lessis" % "bintray-sbt" % "0.3.0")
+//addSbtPlugin("org.foundweekends" % "bintray-sbt" % "0.5.6")
+addSbtPlugin("org.foundweekends" % "sbt-bintray" % "0.5.6")
 
-addSbtPlugin("net.virtual-void" % "sbt-dependency-graph" % "0.8.2")
+addSbtPlugin("net.virtual-void" % "sbt-dependency-graph" % "0.9.2")
