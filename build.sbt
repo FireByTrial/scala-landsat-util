@@ -24,7 +24,7 @@ resolvers += "LocationTech GeoTrellis Releases" at "https://repo.locationtech.or
 val gtMode = if(sys.props.get("INCLUDE_GT").isDefined) "compile" else "provided"
 
 libraryDependencies ++= Seq(
-  "io.spray" %% "spray-json" % "1.3.2",
+  "io.spray" %% "spray-json" % Version.spray,
   "com.typesafe.akka" %% "akka-actor" % Version.akka,
   "com.typesafe.akka" %% "akka-http" % Version.akkaHttp,
   "com.typesafe.akka" %% "akka-http-spray-json" % Version.akkaHttp,
