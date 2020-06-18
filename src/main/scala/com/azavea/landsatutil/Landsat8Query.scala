@@ -11,9 +11,6 @@ import com.typesafe.config.{Config, ConfigFactory}
 import com.typesafe.scalalogging.LazyLogging
 import geotrellis.vector._
 
-import java.time.{ZoneOffset, ZonedDateTime}
-import java.time.format.DateTimeFormatter
-import java.util.Locale
 import scala.concurrent.{Await, Future}
 import scala.util.Try
 
@@ -24,6 +21,7 @@ case class QueryResult(metadata: QueryMetadata, images: Seq[LandsatImage]) {
 
 case class QueryMetadata(found: Int, page: Int, limit: Int)
 
+@deprecated("do not use, public API is now using STAC", "1.0.2 landsat-util")
 object Landsat8Query {
   val conf: Config = ConfigFactory.load()
   val API_URL: String = conf.getString("landsatutil.apiUrl")
@@ -33,6 +31,7 @@ object Landsat8Query {
   def apply() = new Landsat8Query()
 }
 
+@deprecated("do not use, public API is now using STAC", "1.0.2 landsat-util")
 class Landsat8Query() extends SprayJsonSupport with LazyLogging {
 
 
